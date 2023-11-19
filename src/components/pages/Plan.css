@@ -171,3 +171,32 @@ html {
   padding: 1.25rem 2rem;
   border-radius: 0.5rem;
 }
+
+@media screen and (min-width: 768px) {
+  .PlanBox {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .PlanBox-Content-PlansBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .PlanBox-Content-PlansBox-Plan {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .PlanBox-Content-LinksBox {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+}

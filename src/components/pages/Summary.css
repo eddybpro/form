@@ -135,8 +135,24 @@ html {
   font-size: 1.6rem;
   text-transform: capitalize;
   text-decoration: none;
-  background-color: var(--color-brand-1);
+  background-color: var(--color-site-4);
   color: var(--color-brand-3);
   padding: 1.25rem 2rem;
   border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .SummaryBox {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .SummaryBox-Content-LinksBox {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
 }

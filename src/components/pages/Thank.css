@@ -60,3 +60,12 @@ html {
   font-size: 1.6rem;
   color: var(--color-brand-2);
 }
+
+@media screen and (min-width: 768px) {
+  .ThankBox {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -70,3 +70,45 @@ html {
 .desktop {
   display: none;
 }
+
+@media screen and (min-width: 768px) {
+  .SidebarBox {
+    width: 100%;
+    max-width: 35rem;
+    min-height: 94vh;
+    display: block;
+    background: url("../assets/bg-sidebar-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+  }
+
+  .SidebarBox > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .SidebarBox-TxtBox-StepPara {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: var(--color-site-6);
+    font-weight: 300;
+  }
+
+  .SidebarBox-TxtBox-NamePara {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-brand-3);
+    text-transform: uppercase;
+  }
+}
