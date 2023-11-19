@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --color-brand-1: hsl(213, 96%, 18%);
+  --color-brand-2: hsl(231, 11%, 63%);
+  --color-brand-3: hsl(0, 0%, 100%);
+  --color-brand-4: hsl(354, 84%, 57%);
+
+  --color-site-1: hsl(217, 100%, 97%);
+  --color-site-2: hsl(231, 100%, 99%);
+  --color-site-3: hsl(229, 24%, 87%);
+  --color-site-5: hsl(206, 94%, 87%);
+  --color-site-4: hsl(243, 100%, 62%);
+  --color-site-6: hsl(228, 100%, 84%);
+
+  --font-ubuntu: "Ubuntu", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-ubuntu);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.SummaryBox {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-site-1);
+}
+
+.SummaryBox-Content {
+  background-color: var(--color-site-2);
+  width: 90%;
+  margin: -8rem auto 0;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 18px -5px var(--color-brand-2);
+}
+
+.SummaryBox-Content-Title {
+  font-size: 3rem;
+  color: var(--color-brand-1);
+  margin-bottom: 2rem;
+}
+
+.SummaryBox-Content-Para {
+  font-size: 1.6rem;
+  color: var(--color-brand-2);
+  margin-bottom: 2rem;
+}
+
+.SummaryBox-Content-Wrapper {
+  background-color: var(--color-site-1);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.SummaryBox-Content-Wrapper-Card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.SummaryBox-Content-Wrapper-Card-Title {
+  color: var(--color-brand-1);
+  font-size: 1.6rem;
+}
+
+.SummaryBox-Content-Wrapper-Card-Link {
+  color: var(--color-brand-2);
+  font-size: 1.6rem;
+}
+
+.SummaryBox-Content-Wrapper-Card-Price {
+  color: var(--color-brand-1);
+  font-size: 1.6rem;
+}
+
+.SummaryBox-Content-Wrapper-Card-Price.first {
+  font-weight: 700;
+}
+
+.SummaryBox-Content-Wrapper-Card-Name {
+  color: var(--color-brand-2);
+  font-size: 1.6rem;
+}
+
+.SummaryBox-Content-TotalBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.SummaryBox-Content-TotalBox-Name {
+  color: var(--color-brand-2);
+  font-size: 1.6rem;
+}
+
+.SummaryBox-Content-TotalBox-Price {
+  color: var(--color-site-4);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.SummaryBox-Content-LinksBox {
+  position: absolute;
+  bottom: -8rem;
+  left: 0;
+  right: 0;
+  background-color: var(--color-site-2);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SummaryBox-Content-LinksBox-Back {
+  font-size: 1.6rem;
+  color: var(--color-brand-2);
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.SummaryBox-Content-LinksBox-Next {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  background-color: var(--color-brand-1);
+  color: var(--color-brand-3);
+  padding: 1.25rem 2rem;
+  border-radius: 0.5rem;
+}
